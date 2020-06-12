@@ -14,7 +14,7 @@ class NewColumn extends Migration
     public function up()
     {
         Schema::table('usuarios', function (Blueprint $table) {
-            $table->string('new')->after('nombre');
+           // $table->string('new')->after('nombre');
         });
     }
 
@@ -26,7 +26,7 @@ class NewColumn extends Migration
     public function down()
     {   
         Schema::table('usuarios', function (Blueprint $table) {
-            $table->dropColumn('new');
+           // $table->dropColumn('new');
         });
     }
 }

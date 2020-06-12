@@ -14,7 +14,7 @@ class CambioNombreLomunUser extends Migration
     public function up()
     {
         Schema::table('usuarios', function (Blueprint $table) {
-            $table->renameColumn('new', 'lanuevacolumna');
+           // $table->renameColumn('new', 'lanuevacolumna');
         });
     }
 
@@ -26,7 +26,7 @@ class CambioNombreLomunUser extends Migration
     public function down()
     {
         Schema::table('usuarios', function (Blueprint $table) {
-            $table->renameColumn('lanuevacolumna','new');
+           // $table->renameColumn('lanuevacolumna','new');
         });
     }
 }
